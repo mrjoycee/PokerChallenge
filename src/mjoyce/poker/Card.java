@@ -1,4 +1,4 @@
-package mjoyce.poker.model;
+package mjoyce.poker;
 
 public class Card implements Comparable<Card> {
 	public enum Suit {

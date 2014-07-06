@@ -1,10 +1,9 @@
-package mjoyce.poker.recognizers;
+package mjoyce.poker;
 
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-import mjoyce.poker.model.Card;
 
 public abstract class HandRecognizer implements Comparable<HandRecognizer> {
 	

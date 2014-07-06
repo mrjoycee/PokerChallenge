@@ -1,14 +1,14 @@
-package mjoyce.poker.model.tests;
+package mjoyce.poker.tests;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNull;
 
 import java.util.List;
 
-import mjoyce.poker.model.Card;
-import mjoyce.poker.model.Card.Rank;
-import mjoyce.poker.model.Card.Suit;
-import mjoyce.poker.model.CardFactory;
+import mjoyce.poker.Card;
+import mjoyce.poker.CardFactory;
+import mjoyce.poker.Card.Rank;
+import mjoyce.poker.Card.Suit;
 
 import org.junit.Test;
 

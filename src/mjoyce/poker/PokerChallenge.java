@@ -5,9 +5,6 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.List;
 
-import mjoyce.poker.model.Card;
-import mjoyce.poker.model.CardFactory;
-import mjoyce.poker.recognizers.HandRecognizer;
 
 public class PokerChallenge {
 	public static void main(String[] args) {

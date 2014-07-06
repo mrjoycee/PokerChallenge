@@ -1,12 +1,9 @@
-package mjoyce.poker.recognizers;
+package mjoyce.poker;
 
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.List;
 
-import mjoyce.poker.model.Card;
-import mjoyce.poker.model.Card.Rank;
-
+import mjoyce.poker.Card.Rank;
 
 public abstract class SetRecognizer extends HandRecognizer {
 	private int mSetSize;

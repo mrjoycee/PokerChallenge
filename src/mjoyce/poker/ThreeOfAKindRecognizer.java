@@ -1,4 +1,4 @@
-package mjoyce.poker.recognizers;
+package mjoyce.poker;
 
 
 public class ThreeOfAKindRecognizer extends SetRecognizer {

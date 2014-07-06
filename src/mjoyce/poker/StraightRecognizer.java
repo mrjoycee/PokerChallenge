@@ -1,10 +1,9 @@
-package mjoyce.poker.recognizers;
+package mjoyce.poker;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import mjoyce.poker.model.Card;
-import mjoyce.poker.model.Card.Rank;
+import mjoyce.poker.Card.Rank;
 
 public class StraightRecognizer extends HandRecognizer {
 	

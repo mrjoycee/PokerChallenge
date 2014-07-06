@@ -1,10 +1,10 @@
-package mjoyce.poker.model;
+package mjoyce.poker;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import mjoyce.poker.model.Card.Rank;
-import mjoyce.poker.model.Card.Suit;
+import mjoyce.poker.Card.Rank;
+import mjoyce.poker.Card.Suit;
 
 public class CardFactory {
 	public static List<Card> deserializeHand(String handString) {

@@ -1,6 +1,6 @@
-package mjoyce.poker.recognizers;
+package mjoyce.poker;
 
-import mjoyce.poker.model.Card.Rank;
+import mjoyce.poker.Card.Rank;
 
 public class StraightFlushRecognizer extends CompoundRecognizer {
 	public StraightFlushRecognizer() {

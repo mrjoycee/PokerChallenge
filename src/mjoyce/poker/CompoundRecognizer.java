@@ -1,8 +1,7 @@
-package mjoyce.poker.recognizers;
+package mjoyce.poker;
 
 import java.util.List;
 
-import mjoyce.poker.model.Card;
 
 public abstract class CompoundRecognizer extends HandRecognizer {
 	private boolean mTestKickers;

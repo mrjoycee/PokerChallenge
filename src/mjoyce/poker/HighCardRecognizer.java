@@ -1,8 +1,7 @@
-package mjoyce.poker.recognizers;
+package mjoyce.poker;
 
 import java.util.List;
 
-import mjoyce.poker.model.Card;
 
 public class HighCardRecognizer extends HandRecognizer {
 
