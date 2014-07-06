@@ -13,3 +13,8 @@ From the project's home directory, run:
 Assuming build was succcessful, from the project's home directory, run:
 
     java -cp bin mjoyce.poker.PokerChallenge
+    
+#### Running JUnit tests: ####
+Assuming build was succcessful, from the project's home directory, run:
+
+    ./run_tests.sh
