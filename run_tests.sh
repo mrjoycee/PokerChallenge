@@ -1,0 +1,1 @@
+java org.junit.runner.JUnitCore mjoyce.poker.tests.CardTests mjoyce.poker.tests.TestComparison mjoyce.poker.tests.TestRecognizerList mjoyce.poker.tests.TestRecognizers
