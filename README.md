@@ -2,7 +2,7 @@
 - Java SDK 1.6
 - JUnit 4
 - ANT
-- CLASSPATH environment variable must be configured to include JUnit.
+- CLASSPATH environment variable must be configured to include JUnit and the bin and bin/tests folders for this project.
 
 #### Building: ####
 From the project's home directory, run:
@@ -13,3 +13,8 @@ From the project's home directory, run:
 Assuming build was succcessful, from the project's home directory, run:
 
     java -cp bin mjoyce.poker.PokerChallenge
+    
+#### Running JUnit tests: ####
+Assuming build was succcessful, from the project's home directory, run:
+
+    ./run_tests.sh
