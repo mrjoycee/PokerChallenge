@@ -1,8 +1,8 @@
 #### Prerequisites: ####
 - Java SDK 1.6
-- JUnit 4
-- ANT
-- CLASSPATH environment variable must be configured to include junit and hamcrest jars.
+- JUnit 4 (https://github.com/junit-team/junit/wiki/Download-and-Install)
+- ANT (http://ant.apache.org/bindownload.cgi)
+- CLASSPATH environment variable must be configured to include junit.jar and hamcrest-core.jar.
 
 #### Building: ####
 From the project's home directory, run:
