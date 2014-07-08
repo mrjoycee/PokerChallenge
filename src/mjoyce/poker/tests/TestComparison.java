@@ -1,13 +1,14 @@
 package mjoyce.poker.tests;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertTrue;
 
 import java.util.List;
 
 import mjoyce.poker.Card;
 import mjoyce.poker.CardFactory;
-import mjoyce.poker.HandRecognizer;
 import mjoyce.poker.RecognizerList;
+import mjoyce.poker.recognizers.HandRecognizer;
 
 import org.junit.Test;
 

@@ -5,6 +5,8 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.List;
 
+import mjoyce.poker.recognizers.HandRecognizer;
+
 
 public class PokerChallenge {
 	public static void main(String[] args) {
@@ -47,7 +49,7 @@ public class PokerChallenge {
 				System.exit(0);
 			}
 
-			hand = CardFactory.deserializeHand(handString);
+			hand = CardFactory.deserializeHand(handString.toUpperCase());
 			
 			if (hand == null) {
 				System.out.println("Hand not valid. Please try again.");

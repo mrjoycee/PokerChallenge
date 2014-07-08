@@ -6,16 +6,16 @@ import java.util.List;
 
 import mjoyce.poker.Card;
 import mjoyce.poker.CardFactory;
-import mjoyce.poker.FlushRecognizer;
-import mjoyce.poker.FourOfAKindRecognizer;
-import mjoyce.poker.FullHouseRecognizer;
-import mjoyce.poker.PairRecognizer;
-import mjoyce.poker.StraightFlushRecognizer;
-import mjoyce.poker.StraightRecognizer;
-import mjoyce.poker.ThreeOfAKindRecognizer;
-import mjoyce.poker.TwoPairRecognizer;
 import mjoyce.poker.Card.Rank;
 import mjoyce.poker.Card.Suit;
+import mjoyce.poker.recognizers.FlushRecognizer;
+import mjoyce.poker.recognizers.FourOfAKindRecognizer;
+import mjoyce.poker.recognizers.FullHouseRecognizer;
+import mjoyce.poker.recognizers.PairRecognizer;
+import mjoyce.poker.recognizers.StraightFlushRecognizer;
+import mjoyce.poker.recognizers.StraightRecognizer;
+import mjoyce.poker.recognizers.ThreeOfAKindRecognizer;
+import mjoyce.poker.recognizers.TwoPairRecognizer;
 
 import org.junit.Test;
 

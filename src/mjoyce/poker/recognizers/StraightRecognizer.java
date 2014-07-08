@@ -1,20 +1,29 @@
-package mjoyce.poker;
+package mjoyce.poker.recognizers;
 
 import java.util.ArrayList;
 import java.util.List;
 
+import mjoyce.poker.Card;
 import mjoyce.poker.Card.Rank;
 
+/**
+ * HandRecognizer subclass that recognizes a Straight.
+ * @author mjoyce
+ */
 public class StraightRecognizer extends HandRecognizer {
 	
 	private Rank mHighCard;
 	
+	/**
+	 * @return The highest-ranked card in this straight
+	 */
 	public Rank getHighCard() {
 		return mHighCard;
 	}
 
 	@Override
 	protected List<Card> doRecognize(List<Card> hand) {
+		// The hand is sorted, so the straight should appear in descending order.
 		Card prevCard = null;
 		for (Card card : hand) {
 			if (prevCard != null) {

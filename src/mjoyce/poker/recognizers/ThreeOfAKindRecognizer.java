@@ -1,6 +1,9 @@
-package mjoyce.poker;
+package mjoyce.poker.recognizers;
 
-
+/**
+ * HandRecognizer subclass that recognizes a Three of a Kind.
+ * @author mjoyce
+ */
 public class ThreeOfAKindRecognizer extends SetRecognizer {
 	public ThreeOfAKindRecognizer() {
 		super(3);

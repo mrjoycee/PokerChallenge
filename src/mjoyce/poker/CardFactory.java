@@ -6,7 +6,29 @@ import java.util.List;
 import mjoyce.poker.Card.Rank;
 import mjoyce.poker.Card.Suit;
 
+/**
+ * Contains static convenience methods for parsing Cards using string representations.
+ * @author mjoyce
+ */
 public class CardFactory {
+	
+	/**
+	 * Parses a string representation of a hand of cards and returns a list of Card objects. Cards are specified by 2-3 character strings
+	 * of the order <rank><suit>. Card ranks from two to ten are represented by standard arabic numerals (2 to 10). Face cards are as follows:
+	 * 		J for Jack
+	 * 		Q for Queen
+	 * 		K for King
+	 * 		A for Ace
+	 * Suits are represented by one-character strings as follows:
+	 * 		C for Clubs
+	 * 		D for Diamonds
+	 * 		H for Hearts
+	 * 		S for Spades
+	 * For example, the string "AS" represents the Ace of Spades, and "2H" represents the Two of Hearts.
+	 * The hand string can be made up of any number of cards, separated by spaces.
+	 * @param handString A string representation of a hand of cards, separated by spaces.
+	 * @return A list of Card objects.
+	 */
 	public static List<Card> deserializeHand(String handString) {
 		String [] cardStrs = handString.split(" ");
 		List<Card> result = new ArrayList<Card>(cardStrs.length);
@@ -14,11 +36,19 @@ public class CardFactory {
 			Card card = deserializeCard(cardStr);
 			if (card != null) {
 				result.add(card);
+			} else {
+				// if we get an invalid card, there's no point in continuing
+				return null;
 			}
 		}
 		return result;
 	}
 	
+	/**
+	 * Used by deserializeHand to parse individual card strings into Card objects
+	 * @param cardString A 2-3 character string representing an individual card.
+	 * @return A Card object.
+	 */
 	public static Card deserializeCard(String cardString) {
 		// Card string must be of the format <rank><suit> e.g. KH (King of Hearts)
 		// We recognize strings of length 2 and 3. Strings of length three are always the ten of some suit
