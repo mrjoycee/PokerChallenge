@@ -94,10 +94,14 @@ public class TestRecognizerList {
 	public void testStraightFlush() {
 		List<Card> hand0 = CardFactory.deserializeHand("10C AC QC JC KC");
 		HandRecognizer match = RecognizerList.matchHand(hand0);
+		assertEquals(HandType.ROYAL_FLUSH, match.getHandType());
+		
+		List<Card> hand1 = CardFactory.deserializeHand("2C 5C 3C 4C 6C");
+		match = RecognizerList.matchHand(hand1);
 		assertEquals(HandType.STRAIGHT_FLUSH, match.getHandType());
 		
-		List<Card> hand1 = CardFactory.deserializeHand("10C AC 4D JC KC");
-		match = RecognizerList.matchHand(hand1);
+		List<Card> hand2 = CardFactory.deserializeHand("10C AC 4D JC KC");
+		match = RecognizerList.matchHand(hand2);
 		assertEquals(HandType.HIGH_CARD, match.getHandType());
 	}
 

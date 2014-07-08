@@ -10,6 +10,11 @@ import mjoyce.poker.recognizers.HandRecognizer;
 
 public class PokerChallenge {
 	public static void main(String[] args) {
+		System.out.println("Enter two five-card poker hands for comparison. Cards are specified in the form <rank><suit>\n" +
+				"where <rank> is the numeric rank of the card (or J, Q, K or A for face cards) and <suit> is the first letter\n" +
+				"in the desired suit. For example, 10D is the Ten of Diamonds, and KS is the King of Spades. Each card in the hand\n" +
+				"should be separated by a space.");
+
 		List<Card> hand1 = getHandInput(1);
 		List<Card> hand2 = getHandInput(2);
 		

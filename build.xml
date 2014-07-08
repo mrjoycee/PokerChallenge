@@ -1,6 +1,23 @@
-<project default="compile">
-    <target name="compile">
+<project default="build">
+    <target name="build">
         <mkdir dir="bin"/>
         <javac srcdir="src" destdir="bin"/>
+    </target>
+    
+    <target name="clean">
+        <delete dir="bin"/>
+    </target>
+
+    <target name="test" depends="build">
+        <junit printsummary="on" fork="true" haltonfailure="yes">
+            <classpath>
+                <pathelement location="bin/"/>
+            </classpath>
+            <formatter type="plain"/>
+            <test name="mjoyce.poker.tests.CardTests"/>
+            <test name="mjoyce.poker.tests.TestComparison"/>
+            <test name="mjoyce.poker.tests.TestRecognizerList"/>
+            <test name="mjoyce.poker.tests.TestRecognizers"/>
+        </junit>
     </target>
 </project>
